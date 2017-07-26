@@ -1,0 +1,350 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+.updated,.update-nag{
+    display: none !important;
+}
+/* Top Banner Begin  */
+
+.gd_calendar_top_banner_container{
+    float: right;
+    width: calc(100% - 160px);
+    z-index: 1;
+    position: relative;
+    margin-bottom: 50px;
+}
+.gd_calendar_new_list_header {
+    background: #fff;
+    border: 1px solid #d7d7d7;
+    padding: 20px 0 76px 0;
+}
+#gd_calendar_new {
+    display: inline-block;
+    padding: 8px 15px;
+    font-size: 16px;
+    text-decoration: none;
+    border: 1px solid #5f7df5;
+    color: #5f7df5;
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: all 0.3s;
+    float: right;
+}
+#gd_calendar_new:hover {
+    background: #5f7df5;
+    color: #fff;
+}
+.taxonomy-event_category h1.wp-heading-inline, .taxonomy-event_tag h1.wp-heading-inline,
+.post-type-gd_events h1.wp-heading-inline, .post-type-gd_calendar h1.wp-heading-inline,
+.post-type-gd_organizers h1.wp-heading-inline, .post-type-gd_venues h1.wp-heading-inline,
+.post-type-gd_events a.page-title-action,.post-type-gd_calendar a.page-title-action,
+.post-type-gd_organizers a.page-title-action,.post-type-gd_venues a.page-title-action
+{
+    display: none;
+}
+.gd_calendar_top_banner{
+    padding: 20px 30px 40px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #23282d;
+}
+.gd_calendar_top_banner span{
+    position: relative;
+    top: 25px;
+    font-size: 40px;
+    left: 120px;
+    line-height: 1;
+}
+.gd_calendar_top_banner ul{
+    float: right;
+    position: relative;
+    top: 20px;
+}
+.gd_calendar_top_banner li{
+    display: inline-block;
+    padding: 0 20px;
+}
+.gd_calendar_top_banner li a{
+    color: #fff;
+    font-size: 19px;
+    text-decoration: none;
+}
+.gd_calendar_top_banner li:hover:after {
+    content: '';
+    background-color: #fff;
+    display: block;
+    height: 5px;
+    border-radius: 2px;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: -20px;
+}
+.gd_calendar_banner_logo:before{
+    content: url('../images/calendar_logo.png');
+    position: absolute;
+    z-index: 20;
+    top: 28px;
+}
+
+/* Top Banner End  */
+
+.venue_box, .new_venue_box {
+    min-height: 320px;
+}
+.venue_info, .event_venue_info {
+    float: left;
+    width: 325px;
+    border-collapse: collapse;
+    margin-right: 80px;
+}
+.event_info, .organizer_info{
+    width: 325px;
+    border-collapse: collapse;
+    margin-right: 80px;
+}
+input[type=tel] {
+    margin-left: 1px !important;
+}
+.venue_field input, .organizer_field input {
+    width: 100%;
+}
+.venue_cost input {
+    width: 60px;
+}
+.venue_info tr td, .organizer_info tr td {
+    height: 30px;
+}
+.venue_info tr td:first-child, .event_date tr td:first-child, .event_venue_info tr td:first-child, .organizer_info tr td:first-child {
+    width: 25%;
+}
+.venue_info tr td:last-child, .event_date tr td:last-child, .event_venue_info tr td:last-child, .organizer_info tr td:last-child {
+    width: 75%;
+}
+.event_date {
+    width: 475px;
+    border-collapse: collapse;
+}
+.post-type-gd_venues #post-body #normal-sortables, .post-type-gd_events #post-body #normal-sortables, .post-type-gd_organizers #post-body #normal-sortables {
+    min-height: 0;
+}
+.type-gd_calendar .featured_image a {
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+/* Phone input */
+.intl-tel-input {
+    width: 100%;
+}
+#error-msg, .error-msg {
+    color: red;
+}
+#valid-msg {
+    color: #00C900;
+}
+input.error {
+    border: 1px solid #FF7C7C;
+}
+.hide {
+    display: none;
+}
+.event_location {
+    width: 25%;
+}
+.event_organizer {
+    width: 20%;
+}
+.event_location > label, .event_organizer > label {
+    float: left;
+    line-height: 28px;
+}
+.event_location > label {
+    width: 24%;
+}
+.event_organizer > label {
+    width: 29%;
+}
+.event_venue {
+    width: 70%;
+}
+.event_back, .event_block_edit, #repeat_day, #repeat_month, #repeat_year {
+    display: none;
+}
+.venue_save, .organizer_save {
+    float: right;
+}
+.checkboxes_container{
+    max-height: 109px;
+    overflow-y: auto;
+    width: 150px;
+}
+#gd_calendar_select{
+    width: 100%;
+}
+/* Coming Soon Begin*/
+.coming_soon{
+    background-image:url('../images/comingsoon.png');
+    background-repeat:no-repeat;
+    background-size:cover;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    font-family: "Open Sans";
+}
+.coming_soon h1{
+    color: #fff;
+    font-size: 90px;
+    margin: 0;
+    padding-top: 215px;
+    font-weight: 400;
+}
+.coming_soon h3{
+    font-size: 30px;
+    text-transform: uppercase;
+    padding-top: 55px;
+    padding-bottom: 30px;
+    color: #fff;
+}
+.coming_soon .gd_social {
+    margin: 0 0 70px;
+}
+.coming_soon form.subscribe_form {
+    box-sizing: border-box;
+    margin: 0 0 75px;
+    display: inline-flex;
+    overflow: hidden;
+    text-align: center;
+}
+.coming_soon form.subscribe_form input[type=text] {
+    border-radius: 30px;
+    font-family: 'Open Sans', sans-serif;
+    width: 300px;
+    margin-right: 4%;
+}
+.coming_soon form.subscribe_form .error {
+    color: red;
+}
+.coming_soon form.subscribe_form label.error {
+    display: none!important;
+}
+.coming_soon form.subscribe_form input[type=submit] {
+    color: #fff;
+    float: right;
+    cursor: pointer;
+    padding: 20px 30px;
+    border-radius: 30px;
+    background-color: #2e5aef;
+    width: 229px;
+}
+.coming_soon form.subscribe_form input {
+    margin: 0;
+    outline: 0;
+    border: 0;
+    float: left;
+    font-size: 18px;
+    padding: 20px 25px;
+    box-sizing: content-box;
+}
+.grandwp_tw, .grandwp_fb, .grandwp_youtube {
+    margin-right: 30px;
+}
+.grandwp_tw, .grandwp_fb, .grandwp_youtube, .grandwp_gplus,
+.grandwp_tw:focus, .grandwp_tw:active,
+.grandwp_fb:focus, .grandwp_fb:active,
+.grandwp_youtube:focus, .grandwp_youtube:active,
+.grandwp_gplus:focus, .grandwp_gplus:active{
+    text-decoration: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.coming_soon .contact_us {
+    font-size: 18px;
+    padding: 15px 40px;
+    display: inline-block;
+    margin: 0 0 265px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.coming_soon .contact_us:hover {
+    background-color: #2e5aef;
+    border: 2px solid transparent;
+}
+.contact {
+    position: fixed;
+    display: none;
+    overflow: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(27,31,35,.95);
+}
+.contact .form {
+    width: 520px;
+    text-align: center;
+    padding: 40px;
+    background: #f9f9f9;
+    box-sizing: border-box;
+    margin: 100px auto;
+    transition: transform .2s ease-in-out;
+}
+.contact .form .col {
+    width: 205px;
+    margin: 0 0 30px;
+    display: inline-block;
+    float: left;
+}
+.contact .form .col.last {
+    float: right;
+}
+.contact .form textarea {
+    height: 175px;
+    padding: 20px;
+}
+.contact .form input, .contact .form textarea {
+    padding: 15px 20px;
+    margin: 0;
+    outline: 0;
+    width: 100%;
+    background: #f9f9f9;
+    border: 3px solid #e0e0e0;
+    font-size: 18px;
+    font-family: Helvetica Neue,Arial,sans-serif;
+    box-sizing: border-box;
+    resize: none;
+    border-radius: 5px;
+}
+.contact label.error {
+    color: red;
+    float: left;
+    font-size: 11px;
+    padding-top: 10px;
+}
+.contact .form .submit{
+    margin: 30px 0 0;
+    text-align: center;
+    clear: left;
+}
+.contact .form .submit input {
+    cursor: pointer;
+    display: inline-block;
+    background: #2e5aef;
+    color: #fff;
+    border: 0;
+    padding: 20px 45px;
+    width: 230px;
+    border-radius: 30px;
+}
+.response{
+    color: #000;
+    font-size: 15px;
+}
+/* Coming Soon End */
